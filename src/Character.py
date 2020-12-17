@@ -1,4 +1,8 @@
 #!/usr/bin/python
 
-class Character(self):
-    pass
+class Character(object):
+
+
+    def __init__(self):
+        pass
+        # self.name = None
