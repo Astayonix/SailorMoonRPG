@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-class Character(object):
+class Hero(object):
 
 
     def __init__(self):
