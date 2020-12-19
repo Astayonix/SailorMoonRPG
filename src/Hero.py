@@ -3,6 +3,5 @@
 class Hero(object):
 
 
-    def __init__(self):
-        pass
-        self.name = None
+    def __init__(self, Name):
+        self.name = Name
