@@ -8,12 +8,15 @@ class HeroTest(unittest.TestCase):
 
 
     def setUp(self):
-        pass
+        hero = Hero('Akum Ra')
 
 
     def test_hero_existance(self):
         hero = Hero()
         self.assertIsInstance(hero,Hero,'Not a Match')
+
+    def test_hero_name_setter(self):
+        self.assertIs(hero.name, 'Akum Ra', 'Not a Match')
 
 
 if __name__ == '__main__':
