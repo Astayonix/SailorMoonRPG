@@ -13,17 +13,15 @@ class HeroTest(unittest.TestCase):
 
 
     def test_hero_existance(self):
-        self.assertIsInstance(self.hero,Hero,'Not a Match')
+        self.assertIsInstance(self.hero,Hero,'Not a Hero')
 
 
     def test_hero_name_setter(self):
-        self.assertIs(self.hero.name, 'Serena', 'Not a Match')
+        self.assertIs(self.hero.name, 'Serena', 'No Name Detected')
 
 
-    def multi_player_test(self):
-        print(self.hero)
-        print(self.hero2)
-        self.assertEquals(self.hero, self.hero2, 'Not a Match')
+    def test_multi_player(self):
+        self.assertNotEqual(self.hero, self.hero2, '{} =! {}'.format(self.hero, self.hero2))
 
 
     def tearDown(self):
